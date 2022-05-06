@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    color: rgb(229, 19, 40);
+}
+
+.photo span{
+    position: absolute;
+    bottom: 0;
+    font-size: 60px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+.bio ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio ul li{
+    list-style: none;
+    margin: 0 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    gap: 17px;
+}
+
+.content a{
+    display: block;
+    width: 40%;
+    background:  rgb(253, 182, 16);
+    text-align: center;
+    color:#111;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content a::before{
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+}
+
+.content .twitter::before {
+    content: "Twitter";
+    top: 0;
+    left: -100%;
+    background: #00acee;
+}
+
+.content .twitter:hover:before {
+    left: 0;
+}
+
+.content .github::before {
+    content: "Github";
+    top: 0;
+    right: -100%;
+    background: #010101;
+}
+
+.content .github:hover:before {
+    right: 0;
+}
+
+.content .linkedin::before {
+    content: "LinkedIn";
+    left: 0;
+    bottom: -100%;
+    background: #3334a1;
+}
+
+.content .linkedin:hover:before {
+    bottom: 0;
+}
+
