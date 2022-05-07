@@ -154,3 +154,15 @@ body{
     bottom: 0;
 }
 
+
+.content .cloud::before {
+    content: "Google Cloud";
+    left: 0;
+    top: -100%;
+    background: #c41f09;
+}
+
+.content .cloud:hover:before {
+    top: 0;
+}
+
