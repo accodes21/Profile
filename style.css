@@ -7,18 +7,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background: linear-gradient(to right, rgb(140, 54, 180),rgb(242, 62, 46));
+    background-size: 300% 300%;
+    animation: animate 10s   infinite  ease-in-out;
+    
+} 
+
+@keyframes animate {
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
+}
+
 .photo{
     display: flex;
     justify-content: center;
     align-items:center;
+    flex-direction: column;
     margin-top: 50px;
-    position: relative;
     text-align: center;
-    color: rgb(229, 19, 40);
+    color: rgb(253, 182, 16);
 }
 
 .photo span{
-    position: absolute;
     bottom: 0;
     font-size: 60px;
     line-height: 1em;
@@ -30,11 +48,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .bio ul li{
     list-style: none;
-    margin: 0 10px;
+    margin: 0 5px;
     font-size: 22px;
     font-weight: 500;
 }
@@ -63,6 +82,7 @@
     border-radius: 30px;
     position: relative;
     overflow: hidden;
+    box-shadow:10px 10px rgba(0, 0, 0, .4);
 }
 
 .content a::before{
