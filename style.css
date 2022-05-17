@@ -34,6 +34,18 @@ body{
     color: rgb(253, 182, 16);
 }
 
+img{
+    border-radius: 50%;
+    border: 3px solid transparent;
+    outline: 4px solid #e5a40b;
+    transition: all .8s;
+}
+
+img:hover{
+    transform: rotate(360deg);
+    filter:grayscale(50%);
+}
+
 .photo span{
     bottom: 0;
     font-size: 60px;
