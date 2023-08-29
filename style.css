@@ -168,7 +168,7 @@ img:hover{
 
 
 .content .cloud::before {
-    content: "Google Cloud";
+    content: "Portfolio";
     left: 0;
     top: -100%;
     background: #c41f09;
